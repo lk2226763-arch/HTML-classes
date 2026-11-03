@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>space</title>
+
+    <style>
+        .alert{
+            color: black;
+            background: aqua;
+            padding: 5px;
+        }
+    </style>  
+</head>
+<body>
+<h1 id="heading">welcome </h1>
+<p>space </p>
+<p>lovers are this way</p>
+
+<script>
+    
+    let div = document.createElement('div');
+    div.id =  "paragraph";
+    div.className = "alert";
+    div.innerHTML = "<p> welcome you are going to sapce in 3 2 1 yay we made it</p>";
+    document.body.append(div);
+
+
+    let heading = document.getElementById("heading");
+    heading.innerHTML = '&#128512'
+
+    document.querySelector('header p'). innerHTML = " <strong> you made it</strong>";
+
+</script>
+
+</body>
