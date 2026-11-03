@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title>A creepy story</Title>
+<style>
+    body.dark {
+        color: white;
+        background: black;
+    }
+    button{
+        display: block;
+        margin: 5px;
+    }
+    .textentery {
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+</style>
+</head>
+<body>
+<h1>The basement</h1>
+<p id="story">I wanted to find my friend, and he was hiding in the basement</p>
+<button onclick="godark()"> Get in the mood</button>
+<div class="textentery">Type your name here,if you dare: <input type="text" id="name"></div>
+<button onclick="typeandscream()">Please, Please don't click me</button>
+<button onclick="finishthestory()">Tell me what happened!</button>
+<script>
+    function typeandscream() {
+        //uncomment the commented codes to use the audio
+        // document.getelementbyid("audio").play();
+        var personname = document.getElementById("name").value;
+        alert("I told you not to do that" + personname)
+
+    }
+    function godark(){
+        document.body.className = "dark";
+    }
+    function finishthestory (){
+        document.getElementById("story").innerHTML = "so I carefully searched the damp dungeon. there you are!";
+    }
+</script>
+</body>
+</html>
