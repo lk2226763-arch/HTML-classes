@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Slider</title>
+    </head>
+    <body>
+<!-- Slide show -->
+ <section>
+    <img class="myslides" src="https://plus.unsplash.com/premium_photo-1673306778968-5aab577a7365?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+    style="height: 500px;">
+    <img class="myslides" src="https://images.unsplash.com/photo-1760891502243-32bf90ee1301?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+   style="height: 500px; width: 700px;"  >
+   <img class="myslides" src="https://images.unsplash.com/photo-1661249138684-ca546b500d0b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+   style="height: 500px; width: 700px;"  >
+
+ <img class="myslides" src="https://media.istockphoto.com/id/1759142899/photo/walkway-in-deep-forest-of-karnataka-india.jpg?s=612x612&w=is&k=20&c=Dw0KY5jRAk5ncjC3BHqTC8rf2gudKIBxnqvl2sJn8WE="
+   style="height: 500px; width: 700px;"  >
+
+   <img class="myslides" src="https://plus.unsplash.com/premium_photo-1674718014738-14cccf283520?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+   style="height: 500px; width: 700px;"  >
+
+ </section>
+ <script>
+    // Automatic slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x =
+        document.getElementsByClassName("myslides");
+
+        for (i = 0;i <x.length; i++) {
+            x[i].style.display = "none"
+        }
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 1000)
+    }
+ </script>
+    </body>
+</html>
